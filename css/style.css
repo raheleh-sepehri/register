@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'iransans';
+    src: url(../font/IRANSansWeb.eot) format(eot);
+    src: url(../font/IRANSansWeb.ttf) format(ttf);
+    src: url(../font/IRANSansWeb.woff) format(wof);
+}
+
+body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'iransans';
+    list-style: none;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+::placeholder {
+    color: #c0c0c0;
+    font-size: 14px;
+}
+
+#register {
+    width: 100%;
+    background-image: url('../img/back.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#register .register-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#register .register-main .register {
+    width: 60%;
+    background-color: white;
+    padding: 100px 0;
+    text-align: -webkit-center;
+    border-radius: 0 25px 25px 0;
+}
+
+#register .register-main .register .title h1 {
+    margin: 15px 0;
+    font-size: 50px;
+    color: #3BB397;
+}
+
+#register .register-main .register .title ul {
+    display: flex;
+    width: 27%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#register .register-main .register .title ul li {
+    width: 100%;
+}
+
+#register .register-main .register .title ul li a {
+    color: black;
+}
+
+#register .register-main .register .title ul li a svg {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+    font-size: 40px;
+    padding: 15px;
+    transition: all .3s linear;
+}
+
+#register .register-main .register .title ul li:nth-child(1) a:hover svg {
+    background-color: #0A66C2;
+    color: white;
+}
+
+#register .register-main .register .title ul li:nth-child(2) a:hover svg {
+    background-color: #35465d;
+    color: white;
+}
+
+#register .register-main .register .title ul li:nth-child(3) a:hover svg {
+    background-color: #00a7ce;
+    color: white;
+}
+
+#register .register-main .register .title p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#register .register-main .register form .input-item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.fa-eye{
+    display: none;
+    cursor: pointer;
+}
+.fa-eye-slash{
+    display: block;
+    cursor: pointer;
+}
+.hideshow.active .fa-eye{
+    display: block;
+}
+.hideshow.active .fa-eye-slash{
+    display: none;
+}
+
+#register .register-main .register form .input-item svg {
+    color: #bebebe;
+    font-size: 14px;
+}
+
+#register .register-main .register form .input-item input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+}
+
+#register .register-main .register form .input-item input:focus {
+    border-bottom: 1px solid #bbbbbb;
+}
+
+#register .register-main .register form a {
+    color: black;
+    border: 1px solid #3BB397;
+    display: block;
+    width: 170px;
+    padding: 9px;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-top: 21px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#register .register-main .register form a::before {
+    content: '';
+    position: absolute;
+    background-color: #3BB397;
+    width: 0;
+    height: 217px;
+    right: 0;
+    top: 0;
+    left: 0;
+    transition: all .7s ease-in-out;
+    z-index: -1;
+}
+
+#register .register-main .register form a:hover::before {
+    width: 200px;
+}
+
+#register .register-main .welcome {
+    width: 40%;
+    background-image: url('../img/2.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    border-radius: 25px 0 0 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register .register-main .welcome img {
+    width: 100px;
+    position: absolute;
+    top: 19px;
+    left: 20px;
+}
+
+#register .register-main .welcome .welcome-title {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#register .register-main .welcome .welcome-title h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+#register .register-main .welcome .welcome-title p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#register .register-main .welcome .welcome-title a {
+    background-color: transparent;
+    position: relative;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+#register .register-main .welcome .welcome-title a::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 0;
+    height: 217px;
+    right: 0;
+    top: 0;
+    left: 0;
+    transition: all .7s ease-in-out;
+    z-index: -1;
+}
+#register .register-main .welcome .welcome-title a:hover::before {
+    width: 200px;
+}
